@@ -1,0 +1,138 @@
+    <div class="back">
+      <a routerLink="/"> < Volver</a>
+    </div>
+    <div class="section__player">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="mask text-center">
+                <img src="./assets/rodrigo.png" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h1>Rodrigo Emilio</h1>
+              <h2>Villavicencio Sánchez</h2>
+              <div class="card">
+                <div class="card-body">
+                  <table class="table table-striped">
+                    <tbody>
+                      <tr>
+                        <td><strong> Nacionalidad</strong></td>
+                        <td>Peruana</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Estatura</strong></td>
+                        <td>1.77 m</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Peso</strong></td>
+                        <td>77 Kg</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Nacimiento</strong></td>
+                        <td>04/09/2005</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Perfil</strong></td>
+                        <td>Ambidiestro</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Posición</strong></td>
+                        <td>Extremo izquierdo | lateral izquierdo | Volante</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <div
+                  id="carouselExampleIndicators"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-indicators">
+                    <button
+                      *ngFor="let bt of listado"
+                      type="button"
+                      data-bs-target="#carouselExampleIndicators"
+                      [attr.data-bs-slide-to]="bt.id - 1"
+                      [class]="bt.dato"
+                      attr.aria-label="Slide {{ bt.id }}"
+                      aria-current="true"
+                    ></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div
+                      *ngFor="let pic of listado"
+                      class="carousel-item {{ pic.dato }} "
+                    >
+                      <img [src]="pic.picture" class="d-block w-100" alt="..." />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 offset-1">
+            <h1 class="mb-5">Equipos</h1>
+            <ul>
+              <li>Universitario</li>
+              <li>Ayacucho FC</li>
+              <li>Canteras</li>
+              <li>Coopsol</li>
+              <li>Deportivo Linares</li>
+      
+              <!-- <li>Universitario - <strong>[ 2010 - 2015 ]</strong></li>
+                  <li>Ayacucho FC - <strong>[ 2010 - 2015 ]</strong></li>
+                  <li>Sport Boys - <strong>[ 2010 - 2015 ]</strong></li>
+                  <li>Atletico Grau - <strong>[ 2010 - 2015 ]</strong></li> -->
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="container-fluid mx-0">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Videos</h2>
+          </div>
+        </div>
+      </div>
+      <div>
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/OxV3AD9dtmg?si=ezX-4kkzhhIE2ERO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/E63Zhu4GZ2Y?si=Io-iIc33z-xYEG4U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/eTuLIs_5zW4?si=y11vVgV7kbWlDPc_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>

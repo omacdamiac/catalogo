@@ -1,0 +1,26 @@
+.mask {
+    margin-top: 20px;
+    height: 440px;
+    overflow: hidden;
+    display: block;
+}
+h{
+    
+    &1 {
+        color: white;
+        margin: 0;
+    }
+    &3 {
+        color: white;
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+}
+img{
+    cursor: pointer;
+    filter: grayscale(100%);
+    opacity: .7;
+    &:hover {
+        filter: grayscale(0%);
+    }
+}
